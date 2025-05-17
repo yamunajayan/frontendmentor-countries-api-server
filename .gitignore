@@ -1,0 +1,8 @@
+# Node modules - don't commit dependencies
+node_modules/
+
+.env
+
+# OS files
+.DS_Store
+.vscode/
