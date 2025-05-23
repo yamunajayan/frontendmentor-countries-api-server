@@ -14,6 +14,7 @@ router.get("/", (req, res) => {
     flags: country.flags,
     borders: country.borders,
     topLevelDomain: country.topLevelDomain,
+    nativeName: country.nativeName,
   }));
   res.json(filteredCountries);
 });
