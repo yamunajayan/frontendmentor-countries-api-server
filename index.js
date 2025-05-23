@@ -2,6 +2,7 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import countriesRouter from "./routes/countries.js";
+import regionsRouter from "./routes/regions.js";
 
 dotenv.config();
 
@@ -10,6 +11,7 @@ const PORT = process.env.PORT || 8070;
 
 app.use(cors());
 app.use(express.json());
+app.use("/regions", regionsRouter);
 
 app.use("/countries", countriesRouter);
 
